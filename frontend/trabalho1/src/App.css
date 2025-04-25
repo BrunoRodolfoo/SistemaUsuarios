@@ -1,0 +1,210 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 0;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.developer-name {
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* Formulário */
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.form-section:hover {
+  transform: translateY(-5px);
+}
+
+.form-section h2 {
+  color: #2193b0;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.form-group input:focus {
+  border-color: #2193b0;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 147, 176, 0.2);
+}
+
+/* Tabela */
+.users-list {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.users-list h2 {
+  color: #2193b0;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.btn-save {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: white;
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,176,155,0.4);
+}
+
+.btn-cancel {
+  background: linear-gradient(to right, #636363, #a2ab58);
+  color: white;
+}
+
+.btn-cancel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99,99,99,0.4);
+}
+
+.btn-edit {
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: white;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(33,147,176,0.4);
+}
+
+.btn-delete {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.btn-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,65,108,0.4);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .form-section, .users-list {
+    padding: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+}
